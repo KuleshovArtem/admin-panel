@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Input</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./input.css">
+
+</head>
+<body>
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="incorrect" viewBox="0 0 16 16" >
+            <path id="incorrect" d="M1 15L15 1M1 1L15 15" fill="none"/>
+        </symbol >
+        <symbol id="disabled" viewBox="0 0 16 16">
+            <path id="disabled"  fill-rule="evenodd" clip-rule="evenodd" d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" stroke="none"/>
+            <path  d="M12 5C12 2.8 10.2 1 8 1C5.8 1 4 2.8 4 5L4 9H6V5C6 3.75 7 3 8 3C9 3 10 3.75 10 5V9H12V5Z" stroke="none"/>
+        </symbol>
+    </svg>
+    <div class="input">
+        <div class="input__date"> 
+            <div class="input__title">Дата и время заказа</div>
+            <div class="input__entry-field input__entry-field_empty">
+                <input class="input__date-area input__date-area_empty" placeholder="Введите">                     
+                </div>
+        </div>
+        <div class="input__date">
+            <div class="input__title">Дата и время заказа</div> 
+            <div class="input__entry-field input__entry-field_incorrect">
+                <input class="input__date-area input__date-area_incorrect" placeholder="06.12.2021">
+                <button class="input__button input__button_incorrect">  
+                    <svg class="input_icon input_icon_incorrect">
+                        <use xlink:href=#incorrect></use>
+                    </svg>                         
+                </button>
+            </div>   
+        </div>
+        <div class="input__date">
+            <div class="input__title">Дата и время заказа</div> 
+            <div class="input__entry-field input__entry-field_disabled">
+                <input class="input__date-area input__date-area_disabled " placeholder="06.12.2021">
+                <button class="input__button input__button_area"> 
+                    <svg class="input_icon input_icon_disabled">
+                        <use xlink:href=#disabled></use>
+                    </svg>  
+                </button>
+            </div>   
+         </div>
+    </div>  
+</body>
+</html>
+
+
