@@ -4,10 +4,17 @@
     padding: 2rem 3rem 0rem;
     margin: 0 auto;
     height: 100vh;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1rem;
     }
 /* header */
 .header{
     display: flex;
+    justify-content: space-between;
     align-items:center;
     height: 2rem;
     margin-bottom: 2rem;
@@ -15,13 +22,12 @@
     }
 .header__page-title{
     height: 2rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-style: normal;
     font-weight: bold;
-    letter-spacing: -0.2px;
-    color: #8055FF;
     font-size: 26px;
     line-height: 2rem;
+    letter-spacing: -0.2px;
+    color: #8055FF;
+    
     }
 
 /* filter-row */
