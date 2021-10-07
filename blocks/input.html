@@ -21,34 +21,34 @@
         </symbol>
     </svg>
     <div class="input">
-        <div class="input__date"> 
+        <label class="input__date"> 
             <div class="input__title">Дата и время заказа</div>
             <div class="input__entry-field input__entry-field_empty">
                 <input class="input__date-area input__date-area_empty" placeholder="Введите">                     
                 </div>
-        </div>
-        <div class="input__date">
+        </label>
+        <label for="incorrec-form" class="input__date">
             <div class="input__title">Дата и время заказа</div> 
             <div class="input__entry-field input__entry-field_incorrect">
-                <input class="input__date-area input__date-area_incorrect" placeholder="06.12.2021">
+                <input id="incorrec-form" class="input__date-area input__date-area_incorrect" placeholder="dd.mm.dddd" value="06.12.2021">
                 <button class="input__button input__button_incorrect">  
                     <svg class="input_icon input_icon_incorrect">
                         <use xlink:href=#incorrect></use>
                     </svg>                         
                 </button>
             </div>   
-        </div>
-        <div class="input__date">
+        </label>
+        <label for="disabled-form" class="input__date">
             <div class="input__title">Дата и время заказа</div> 
             <div class="input__entry-field input__entry-field_disabled">
-                <input class="input__date-area input__date-area_disabled " placeholder="06.12.2021">
+                <input id="disabled-form" class="input__date-area input__date-area_disabled " placeholder="dd.mm.dddd" value="06.12.2021">
                 <button class="input__button input__button_area"> 
                     <svg class="input_icon input_icon_disabled">
                         <use xlink:href=#disabled></use>
                     </svg>  
                 </button>
             </div>   
-         </div>
+         </label>
     </div>  
 </body>
 </html>

@@ -62,15 +62,9 @@ body{
 .input__date-area_disabled{
         background-color: var(--blue-background);
     }
-.input__date-area_empty::placeholder{
+.input__date-area::placeholder{
     color: var(--light-blue-text);
     }  
-.input__date-area_incorrect::placeholder{
-        color: var(--black-color);
-    }  
-.input__date-area_disabled::placeholder{
-    color: var(--black-color);
-    }
 
 .input__entry-field_empty{
     border-color: var(--light-blue-frame);
