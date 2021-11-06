@@ -1,0 +1,111 @@
+:root{
+    --light-blue-frame:#459DF5;
+    --light-blue-text:#BAD8F5;
+    --black-color:#000000;
+    --purple-frame:#8055FF;
+    --gray-background:#E5E5E5;
+    --white-color:#FFFFFF;
+    --font-size:0.8125rem;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 36rem;
+    height: 23.5rem;
+    padding: 3rem;
+
+    background-color: var(--gray-background); 
+    border: 0.0625rem dashed var(--purple-frame);
+}
+.buttons__row{
+    display: flex;
+    flex-direction: row;
+}
+.buttons__row_low{
+    margin-top: 2rem;
+}
+.buttons__column{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    border: none;
+    color: var(--white-color);
+}
+.button__text{
+    width: 3.5rem;
+    height: 1rem;
+    font-size: var(--font-size);
+    white-space: nowrap;
+}
+
+.button__icon{
+    display: flex;
+    
+    width: 1rem;
+    height: 1rem; 
+}
+.button__icon_medium{
+    margin-right: 0.5rem;
+}
+.button__icon_small{
+    margin-right: 0.25rem;
+}
+.button_medium-icon{
+    width: 7rem;
+    height: 2rem;
+}
+.button_medium-noIcon{
+    width: 5.5rem;
+    height: 2rem;
+}
+.button_medium-onlyIcon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.button_small-icon{
+    width: 5.75rem;
+    height: 1.5rem;
+}
+.button_small-noIcon{
+    width: 4.5rem;
+    height: 1.5rem;
+}
+.button_small-onlyIcon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.button_basic{
+    background-color: var(--light-blue-frame);
+    border-radius: 0.25rem;
+    
+}
+.button_second{
+    background-color:transparent;
+    border-radius: 0.25rem;
+}
+.button_disabled{
+    background-color:transparent;
+    border-radius: 0.25rem;
+}
+.button_second,
+.button_second .button__text{
+    color: var(--light-blue-frame);
+}
+
+.button_disabled,
+.button_disabled .button__text{
+    color: var(--black-color);
+}
