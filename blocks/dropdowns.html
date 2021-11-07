@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdowns</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dropdowns.css">
+</head>
+<body>
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="checked" viewBox="0 0 16 16">
+            <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+        </symbol> 
+    </svg>
+    <form class="dropdowns">
+        <div class="dropdowns__row">
+            <div class="dropdown__multiple">
+                <label class="multiple__checkbox">
+                    <input type="checkbox" class="multiple__tick">
+                        <svg class="checkbox__icon">
+                            <use href=#checked></use>
+                        </svg>
+                    </input>
+                    <div class="multiple__checkbox-text">Новый</div>
+                </label>
+                <label class="multiple__checkbox">
+                    <input type="checkbox" class="multiple__tick">
+                        <svg class="checkbox__icon">
+                            <use href=#checked></use>
+                        </svg>
+                    </input>
+                    <div class="multiple__checkbox-text">Рассчет</div>
+                </label>
+                <label class="multiple__checkbox">
+                    <input type="checkbox" class="multiple__tick">
+                        <svg class="checkbox__icon">
+                            <use href=#checked></use>
+                        </svg>
+                    </input>
+                    <div class="multiple__checkbox-text">Подтвержден</div>
+                </label>
+                <label class="multiple__checkbox">
+                    <input type="checkbox" class="multiple__tick">
+                        <svg class="checkbox__icon">
+                            <use href=#checked></use>
+                        </svg>
+                    </input>
+                    <div class="multiple__checkbox-text">Отложен</div>
+                </label>
+                <label class="multiple__checkbox">
+                    <input type="checkbox" class="multiple__tick">
+                        <svg class="checkbox__icon">
+                            <use href=#checked></use>
+                        </svg>
+                    </input>
+                    <div class="multiple__checkbox-text">Выполнен</div>
+                </label>
+                <label class="multiple__checkbox">
+                    <input type="checkbox" class="multiple__tick">
+                        <svg class="checkbox__icon">
+                            <use href=#checked></use>
+                        </svg>
+                    </input>
+                    <div class="multiple__checkbox-text">Отменен</div>
+                </label>
+            </div>
+            <div class="dropdown__single">
+                <label class="single__button">
+                    <input type="radio" class="single__button-select" name="single__button" value="new"></input>
+                    <div class="single__button-text">Новый</div>
+                </label>
+                <label class="single__button">
+                    <input type="radio" class="single__button-select" name="single__button" value="calculation"></input>
+                    <div class="single__button-text">Рассчет</div>
+                </label>
+                <label class="single__button">
+                    <input type="radio" class="single__button-select" name="single__button" value="confirmed"></input>
+                    <div class="single__button-text">Подтвержден</div>
+                </label>
+                <label class="single__button">
+                    <input type="radio" class="single__button-select" name="single__button" value="postponed"></input>
+                    <div class="single__button-text">Отложен</div>
+                </label>
+                <label class="single__button">
+                    <input type="radio" class="single__button-select" name="single__button" value="completed"></input>
+                    <div class="single__button-text">Выполнен</div>
+                </label>
+                <label class="single__button">
+                    <input type="radio" class="single__button-select" name="single__button" value="cancelled"></input>
+                    <div class="single__button-text">Отменен</div>
+                </label>
+            </div>
+        </div>
+        <div class="dropdowns__row">
+            <div class="table-action__go-to-page">
+
+            </div>
+            <div class="table-action__delete">
+
+            </div>
+            <div class="theme-switcher">
+
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>
