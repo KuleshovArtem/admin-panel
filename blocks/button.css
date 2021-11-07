@@ -6,6 +6,7 @@
     --gray-background:#E5E5E5;
     --white-color:#FFFFFF;
     --font-size:0.8125rem;
+    --Line-height:1rem; 
 }
 body{
     font-family: 'Ubuntu', sans-serif;
@@ -18,7 +19,6 @@ body{
     width: 36rem;
     height: 23.5rem;
     padding: 3rem;
-
     background-color: var(--gray-background); 
     border: 0.0625rem dashed var(--purple-frame);
 }
@@ -42,25 +42,34 @@ body{
     margin-right: 3rem;
     border: none;
     color: var(--white-color);
+    cursor: pointer
 }
 .button__text{
     width: 3.5rem;
     height: 1rem;
     font-size: var(--font-size);
+    line-height: var(--Line-height);
     white-space: nowrap;
 }
-
 .button__icon{
     display: flex;
-    
     width: 1rem;
     height: 1rem; 
+}
+.button__icon:last-child {
+    margin: 0;
 }
 .button__icon_medium{
     margin-right: 0.5rem;
 }
 .button__icon_small{
     margin-right: 0.25rem;
+}
+.button__icon_basic{
+    fill: var(--white-color);
+}
+.button__icon_second{
+    fill:var(--light-blue-frame)
 }
 .button_medium-icon{
     width: 7rem;
@@ -74,7 +83,6 @@ body{
     width: 2rem;
     height: 2rem;
 }
-
 .button_small-icon{
     width: 5.75rem;
     height: 1.5rem;
@@ -89,12 +97,17 @@ body{
 }
 .button_basic{
     background-color: var(--light-blue-frame);
-    border-radius: 0.25rem;
-    
+    border-radius: 0.25rem; 
+}
+.button_basic:hover{
+    box-shadow: 0 0 0.1rem 0.25rem var(--white-color);
 }
 .button_second{
     background-color:transparent;
     border-radius: 0.25rem;
+}
+.button_second:hover{
+    box-shadow: 0 0 0.1rem 0.25rem var(--light-blue-frame);
 }
 .button_disabled{
     background-color:transparent;
@@ -104,7 +117,6 @@ body{
 .button_second .button__text{
     color: var(--light-blue-frame);
 }
-
 .button_disabled,
 .button_disabled .button__text{
     color: var(--black-color);
