@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="../css/radio.css">
     <link rel="stylesheet" href="..//css/ui-kit.css">
     <link rel="stylesheet" href="../css/button.css">
-
 </head>
 <body>
     <div class="wrapper">
@@ -33,34 +32,34 @@
                         </symbol>
                     </svg>
                     <div class="input">
-                        <div class="input__date"> 
+                        <label class="input__date" for="date-area_empty"> 
                             <div class="input__title">Дата и время заказа</div>
                             <div class="input__entry-field input__entry-field_empty">
-                                <input class="input__date-area input__date-area_empty" placeholder="Введите">                     
+                                <input class="input__date-area input__date-area_empty" id="date-area_empty" value="Введите">                     
                                 </div>
-                        </div>
-                        <div class="input__date">
+                        </label>
+                        <label class="input__date" for="date-area_incorrect">
                             <div class="input__title">Дата и время заказа</div> 
                             <div class="input__entry-field input__entry-field_incorrect">
-                                <input class="input__date-area input__date-area_incorrect" placeholder="06.12.2021">
+                                <input class="input__date-area input__date-area_incorrect" id="date-area_incorrect" value="06.12.2021">
                                 <button class="input__button input__button_incorrect">  
                                     <svg class="input_icon input_icon_incorrect">
                                         <use xlink:href=#incorrect></use>
                                     </svg>                         
                                 </button>
                             </div>   
-                        </div>
-                        <div class="input__date">
+                        </label>
+                        <label class="input__date" for="date-area_disabled">
                             <div class="input__title">Дата и время заказа</div> 
                             <div class="input__entry-field input__entry-field_disabled">
-                                <input class="input__date-area input__date-area_disabled " placeholder="06.12.2021">
+                                <input class="input__date-area input__date-area_disabled" id="date-area_disabled" value="06.12.2021">
                                 <button class="input__button input__button_area"> 
                                     <svg class="input_icon input_icon_disabled">
                                         <use xlink:href=#disabled></use>
                                     </svg>  
                                 </button>
                             </div>   
-                        </div>
+                        </label>
                     </div> 
                 </div>
             </div>
@@ -138,8 +137,8 @@
                                     <use href=#circle></use>
                                 </svg>
                             </label>
-                            <label class="radio__form" for="radio-cheked">
-                                <input class="radio__area" type="radio" id="radio-cheked" name="radio" value="two" checked>
+                            <label class="radio__form" for="radio-cheсked">
+                                <input class="radio__area" type="radio" id="radio-cheсked" name="radio" value="two" checked>
                                 <svg class="radio__icon">
                                     <use href=#circle></use>
                                 </svg>
