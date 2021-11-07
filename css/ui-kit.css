@@ -1,21 +1,27 @@
 .wrapper{
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     height: 100vh;
     width: 100%;
+    margin-top: 3rem;  
+}
+.wrapper__row{
     display: flex;
-    margin-top: 3rem;
-    
+}
+.wrapper__column-left{
+    display: flex;
 }
 .wrapper__input{
+    margin-bottom: 6rem;
     margin-right: 6rem;
 }
-.wrapper__left-collum{
+.wrapper__column-right{
     display: flex;
     flex-direction: column;
 }
 .wrapper__searchbar{
     margin-bottom: 6rem;
-
 }
 .wrapper_checkbox-radio{
     display: flex;
