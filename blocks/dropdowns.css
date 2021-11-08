@@ -1,0 +1,19 @@
+body{
+    margin: 0 auto;
+    width: 100vh;
+}
+.svg{
+    display: none;
+}
+.dropdowns{
+    display: flex;
+}
+.dropdowns__row{
+    display: flex;
+}
+.dropdown__multiple{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 13rem;
+}
