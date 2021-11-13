@@ -13,11 +13,9 @@
 </head>
 <body>
     <svg class="svg" xmlns="http://www.w3.org/2000/svg">
-
         <symbol id="checked" viewBox="0 0 16 16">
             <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
         </symbol>
-
         <symbol id="sun" viewBox="0 0 16 16" strok="none"> 
             <circle cx="8" cy="8" r="4" stroke="none"/>
             <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
@@ -29,17 +27,14 @@
             <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none"/>
             <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
         </symbol> 
-
         <symbol id="moon" viewBox="0 0 16 16" stroke="none">
             <path d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="none"/>
         </symbol>
     </svg>
-
     <div class="dropdowns">
         <div class="dropdowns__row">
             <div class="dropdowns__column">
                 <form class="dropdown__multiple">
-
                     <label class="multiple__checkbox">
                         <input type="checkbox" class="multiple__tick">
                             <svg class="multiple__tick-icon">
@@ -48,7 +43,6 @@
                         </input>
                         <div class="multiple__checkbox-text">Новый</div>
                     </label>
-    
                     <label class="multiple__checkbox">
                         <input type="checkbox" class="multiple__tick">
                             <svg class="multiple__tick-icon">
@@ -57,7 +51,6 @@
                         </input>
                         <div class="multiple__checkbox-text">Рассчет</div>
                     </label>
-    
                     <label class="multiple__checkbox">
                         <input type="checkbox" class="multiple__tick">
                             <svg class="multiple__tick-icon">
@@ -66,7 +59,6 @@
                         </input>
                         <div class="multiple__checkbox-text">Подтвержден</div>
                     </label>
-    
                     <label class="multiple__checkbox">
                         <input type="checkbox" class="multiple__tick">
                             <svg class="multiple__tick-icon">
@@ -75,7 +67,6 @@
                         </input>
                         <div class="multiple__checkbox-text">Отложен</div>
                     </label>
-    
                     <label class="multiple__checkbox">
                         <input type="checkbox" class="multiple__tick">
                             <svg class="multiple__tick-icon">
@@ -84,7 +75,6 @@
                         </input>
                         <div class="multiple__checkbox-text">Выполнен</div>
                     </label>
-    
                     <label class="multiple__checkbox">
                         <input type="checkbox" class="multiple__tick">
                             <svg class="multiple__tick-icon">
@@ -95,7 +85,6 @@
                     </label>
                 </form>
             </div>
-
             <div class="dropdowns__column">
                 <form class="dropdown__single">
 
@@ -130,53 +119,42 @@
                     </label>
 
                 </form>
-            </div>
-
-            
+            </div>  
         </div>
         <div class="dropdowns__row">
-
             <div class="dropdowns__column">
-
                 <form class="table-action-to-page">
-                    <div class="table-action-to-page__wrapper">
-                        <label class="table-action-to-page__input">
-                            <div class="table-action-to-page__text">Номер страницы</div>
+                    <div class="table-action-to-page__text">Номер страницы</div>
+                    <label class="table-action-to-page__input-wrapper">
                             <input class="table-action-to-page__input-area" placeholder="Введите номер">
                         </label>
-                    </div>
                 </form>
             </div>
-
-
             <div class="dropdowns__column">
-
                 <form class="table-action-delete">
                     <div class="table-action-delete__wrapper">
                         <div class="table-action-delete__text">Удалить n записей?</div>
-                        <button class="table-action-delete__button-second">
+                        <button class="table-action-delete__button table-action-delete__button_second">
                             <span class="button-second__text">Удалить</span>
                         </button>
-                        <button class="table-action-delete__button-focus">
+                        <button class="table-action-delete__button table-action-delete__button_focus">
                             <span class="button-focus__text">Отмена</span>
                         </button>
                     </div>
                 </form>
-
             </div>
-            
             <div class="dropdowns__column">
                 <form class="theme-switcher">
                     <div class="theme-switcher__wrapper">
                         <div class="theme-switcher__text">Выберите тему</div>
-                        <button class="theme-switcher__button-second">
-                            <svg class="theme-switcher__icon">
+                        <button class="theme-switcher__button theme-switcher__button_second">
+                            <svg class="theme-switcher__icon theme-switcher__icon_second">
                                 <use href=#sun></use>
                             </svg>
                             <span class="button-second__text">Светлая</span>
                         </button>
-                        <button class="theme-switcher__button-focus">
-                            <svg class="theme-switcher__icon">
+                        <button class="theme-switcher__button theme-switcher__button_focus">
+                            <svg class="theme-switcher__icon theme-switcher__icon_focus">
                                 <use href=#moon></use>
                             </svg>
                             <span class="button-focus__text">Темная</span>
@@ -187,6 +165,5 @@
             
         </div>
     </div>
-    
 </body>
 </html>
