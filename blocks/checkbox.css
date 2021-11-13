@@ -1,9 +1,13 @@
 :root{
-    --gray-background:#E5E5E5;
-    --purple-frame:#8055FF;
-    --light-blue-frame:#BAD8F5;
-    --white-color:#FFFFFF;
     --blue-color:#459DF5;
+    --light-blue-color:#BAD8F5;
+    --black-color:#000000;
+    --purple-color:#8055FF;
+    --gray-color:#E5E5E5;
+    --white-color:#FFFFFF;
+    --red-color:#F53152;
+    --font-size:0.8125rem;
+    --Line-height:1rem;
 }
 body{
     margin: 0 auto;
@@ -20,8 +24,8 @@ body{
     width: 6.5rem;
     height: 4rem;
 
-    background-color: var(--gray-background); 
-    border: 0.0625rem dashed var(--purple-frame);
+    background-color: var(--gray-color); 
+    border: 0.0625rem dashed var(--purple-color);
     border-radius: 0.3125rem;
 }
 .checkbox__form{
@@ -33,7 +37,7 @@ body{
     width: 1rem;
     height: 1rem;
     margin: 0;
-    border: 0.0625rem solid var(--light-blue-frame);
+    border: 0.0625rem solid var(--light-blue-color);
     border-radius: 0.125rem;
     background-color: var(--white-color);
 }
