@@ -1,11 +1,13 @@
 :root{
-    --light-blue-frame:#459DF5;
-    --light-blue-text:#BAD8F5;
+    --blue-color:#459DF5;
+    --light-blue-color:#BAD8F5;
     --black-color:#000000;
-    --purple-frame:#8055FF;
-    --gray-background:#E5E5E5;
+    --purple-color:#8055FF;
+    --gray-color:#E5E5E5;
     --white-color:#FFFFFF;
-    --font-size:13px;
+    --red-color:#F53152;
+    --font-size:0.8125rem;
+    --Line-height:1rem;
 }
 body{
     font-family: 'Ubuntu', sans-serif;
@@ -22,8 +24,8 @@ body{
     width: 22rem;
     height: 12rem;
     padding: 3rem;
-    background-color: var(--gray-background); 
-    border: 0.0625rem dashed var(--purple-frame);      
+    background-color: var(--gray-color); 
+    border: 0.0625rem dashed var(--purple-color);      
     }
 .searchbar__entry-field{
     display: flex;
@@ -33,7 +35,7 @@ body{
     height: 2rem;
     border: 0.0625rem solid;
     border-radius: 0.25rem;
-    border-color: var(--light-blue-frame);
+    border-color: var(--light-blue-color);
     background-color: var(--white-color);
 } 
 .searchbar__entry-field_empty{
@@ -48,7 +50,7 @@ body{
 }
 
 .searchbar__icon-searc{
-    stroke: var(--light-blue-frame); 
+    stroke: var(--light-blue-color); 
     width: 1rem;
     height: 1rem;
 }
@@ -64,7 +66,7 @@ body{
 }
 .searchbar__search-area::placeholder{
     display: block;
-    color: var(--light-blue-text);
+    color: var(--light-blue-color);
 }
 
 .searchbar__button{
@@ -75,7 +77,7 @@ body{
     cursor: pointer;
 }
 .searchbar__icon-delete{
-    stroke: var(--light-blue-frame); 
+    stroke: var(--light-blue-color); 
     width: 1rem;
     height: 1rem;
 }

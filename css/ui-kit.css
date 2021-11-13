@@ -1,3 +1,15 @@
+:root{
+    --blue-color:#459DF5;
+    --light-blue-color:#BAD8F5;
+    --black-color:#000000;
+    --purple-color:#8055FF;
+    --gray-color:#E5E5E5;
+    --white-color:#FFFFFF;
+    --red-color:#F53152;
+    --font-size:0.8125rem;
+    --Line-height:1rem; 
+}
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -9,16 +21,13 @@
 .wrapper__row{
     display: flex;
 }
-.wrapper__column-left{
+.wrapper__column{
     display: flex;
+    flex-direction: column;
 }
 .wrapper__input{
     margin-bottom: 6rem;
     margin-right: 6rem;
-}
-.wrapper__column-right{
-    display: flex;
-    flex-direction: column;
 }
 .wrapper__searchbar{
     margin-bottom: 6rem;
@@ -29,5 +38,8 @@
 }
 .wrapper_checkbox{
     margin-right: 3rem;
+}
+.wrapper__dropdowns{
+    margin-left: 6rem;
 }
 

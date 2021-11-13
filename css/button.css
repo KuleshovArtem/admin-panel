@@ -1,12 +1,13 @@
 :root{
-    --light-blue-frame:#459DF5;
-    --light-blue-text:#BAD8F5;
+    --blue-color:#459DF5;
+    --light-blue-color:#BAD8F5;
     --black-color:#000000;
-    --purple-frame:#8055FF;
-    --gray-background:#E5E5E5;
+    --purple-color:#8055FF;
+    --gray-color:#E5E5E5;
     --white-color:#FFFFFF;
+    --red-color:#F53152;
     --font-size:0.8125rem;
-    --Line-height:1rem; 
+    --Line-height:1rem;
 }
 body{
     font-family: 'Ubuntu', sans-serif;
@@ -19,8 +20,8 @@ body{
     width: 36rem;
     height: 23.5rem;
     padding: 3rem;
-    background-color: var(--gray-background); 
-    border: 0.0625rem dashed var(--purple-frame);
+    background-color: var(--gray-color); 
+    border: 0.0625rem dashed var(--purple-color);
 }
 .buttons__row{
     display: flex;
@@ -69,7 +70,7 @@ body{
     fill: var(--white-color);
 }
 .button__icon_second{
-    fill:var(--light-blue-frame)
+    fill:var(--blue-color)
 }
 .button_medium-icon{
     width: 7rem;
@@ -96,7 +97,7 @@ body{
     height: 1.5rem;
 }
 .button_basic{
-    background-color: var(--light-blue-frame);
+    background-color: var(--blue-color);
     border-radius: 0.25rem; 
 }
 .button_basic:hover{
@@ -107,7 +108,7 @@ body{
     border-radius: 0.25rem;
 }
 .button_second:hover{
-    box-shadow: 0 0 0.1rem 0.25rem var(--light-blue-frame);
+    box-shadow: 0 0 0.1rem 0.25rem var(--light-blue-color);
 }
 .button_disabled{
     background-color:transparent;
@@ -115,7 +116,7 @@ body{
 }
 .button_second,
 .button_second .button__text{
-    color: var(--light-blue-frame);
+    color: var(--blue-color);
 }
 .button_disabled,
 .button_disabled .button__text{

@@ -1,12 +1,13 @@
 :root{
-    --gray-background:#E5E5E5;
-    --purple-frame:#8055FF;
+    --blue-color:#459DF5;
+    --light-blue-color:#BAD8F5;
     --black-color:#000000;
+    --purple-color:#8055FF;
+    --gray-color:#E5E5E5;
     --white-color:#FFFFFF;
-    --light-blue-text:#BAD8F5;
-    --light-blue-frame:#459DF5;
-    --red-frame:#F53152;
-    --blue-background:#BAD8F5;
+    --red-color:#F53152;
+    --font-size:0.8125rem;
+    --Line-height:1rem;
     }
 body{
     font-family: 'Ubuntu', sans-serif;
@@ -20,8 +21,8 @@ body{
     width: 22rem;
     height: 25rem;
     padding: 3.5rem 3rem 3rem 3rem;
-    background-color: var(--gray-background); 
-    border: 0.0625rem dashed var(--purple-frame);      
+    background-color: var(--gray-color); 
+    border: 0.0625rem dashed var(--purple-color);      
     }
 .input__date{
     padding: 0.5rem 0rem 0.5rem 0rem;
@@ -54,10 +55,10 @@ body{
     width: 100%;
     }
 .input__date-area_disabled{
-        background-color: var(--blue-background);
+        background-color: var(--blue-color);
     }
 .input__date-area_empty::placeholder{
-    color: var(--light-blue-text);
+    color: var(--light-blue-color);
     }  
 .input__date-area_incorrect::placeholder{
         color: var(--black-color);
@@ -66,14 +67,14 @@ body{
     color: var(--black-color);
     }
 .input__entry-field_empty{
-    border-color: var(--light-blue-frame);
+    border-color: var(--light-blue-color);
     }
 .input__entry-field_incorrect {
-    border-color: var(--red-frame);
+    border-color: var(--red-color);
     }  
 .input__entry-field_disabled {
-    border-color: var(--light-blue-frame);
-    background-color: var(--blue-background);
+    border-color: var(--light-blue-color);
+    background-color: var(--blue-color);
     }
  .input__button{
      background-color: transparent;
@@ -86,7 +87,7 @@ body{
     align-items: center;
  } 
 .input_icon_incorrect{
-    stroke: var(--light-blue-text);
+    stroke: var(--light-blue-color);
     width: 0.5625rem;
     height: 0.5625rem;
 }
