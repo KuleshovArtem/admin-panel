@@ -23,31 +23,70 @@
                     <span class="button-second__text">Светлая</span>
                 </button>
             </div>
-    
             <div class="filter-row">
-                <div class="filter-group">
-                    <div class="filter-group__search">
-                        <label class="searchbar__entry-field searchbar__entry-field_empty" for="empty">
+                <div class="filter-row-main">
+                    <div class="filter-group-main">
+                        <label class="searchbar" for="searchbar-main">
                             <div class="searchbar__icon-left">
                                 <svg class="searchbar__icon-searc">
                                     <use href=#search-icon></use>
                                 </svg>
                             </div>
-                            <input id="empty" class="searchbar__search-area" placeholder="Номер заказа и ФИО"></input>
+                            <input id="searchbar-main" class="searchbar__search-area" placeholder="Номер заказа и ФИО"></input>
                         </label>
-                    </div>
-                    <div class="filter-group__filter">
-                        <button class="button button_medium-icon button_basic">
-                            <svg class="button__icon button__icon_medium button__icon_basic">
+                        
+                        <button class="main-filter-button main-filter-button_action">
+                            <svg class="button__icon button__icon-white">
                                 <use href=#filter></use>
                             </svg>
                             <div class="button__text">Фильтры</div>
                         </button>
+                        
+                        <button class="main-filter-button main-filter-button_reset">
+                            <div class="button__text">Сбросить фильтры</div>
+                        </button>
+                    </div>
+                    <div class="filter-row__reset">
+                        <button class="main-filter-button main-filter-button_reset">
+                            <svg class="button__icon button__icon-blue">
+                                <use href=#refresh></use>
+                            </svg>
+                            <div class="button__text">Загрузка</div>
+                        </button>
                     </div>
                 </div>
-                
-                <div class="filter-row__loading"></div>
+                <div class="filter-row-expansion">
+                    <div class="filter-row-expansion__date-entry">
+                        <div class="filter-row-expansion__text">Дата оформления</div>
+                        <div class="filter-row-expansion__input-group">
+
+                            <label class="input__date" for="start-date"> 
+                                <div class="input__entry-field input__entry-field_empty">
+                                    <input class="input__date-area input__date-area_empty" id="start-date" value="Введите"> 
+                                    <button class="input__button input__button_incorrect">  
+                                        <svg class="input_icon input_icon_incorrect">
+                                            <use xlink:href=#incorrect></use>
+                                        </svg>                         
+                                    </button>                    
+                                </div>
+                            </label>
+
+                            <label class="input__date" for="finish-date"> 
+                                <div class="input__entry-field input__entry-field_empty">
+                                    <input class="input__date-area input__date-area_empty" id="finish-date" value="Введите">
+                                    <button class="input__button input__button_incorrect">  
+                                        <svg class="input_icon input_icon_incorrect">
+                                            <use xlink:href=#incorrect></use>
+                                        </svg>                         
+                                    </button>                     
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            
     
              <div class="table">
                 <div class="table__header"></div>
@@ -82,6 +121,12 @@
         </symbol>
         <symbol id="filter" viewBox="0 0 16 16" stroke="none" >
             <path d="M12 4H4V5.5L7 8.5V12L9 13V8.5L12 5.5V4Z" stroke="none"/>
+        </symbol>.
+        <symbol id="refresh" viewBox="0 0 16 16">
+            <path d="M2.50251 7.5V8.5C2.50251 10.75 4.75251 13.5 8.00251 13.5C10 13.5 11.6187 12.5 12.6 11" fill="none"/>
+            <path d="M13.5 8.5V7.5C13.5 5.25 11.25 2.5 7.99997 2.5C6 2.5 4.38135 3.5 3.4 5" fill="none"/>
+            <path d="M4.5 9.5L2.50254 7.5L0.752533 9.75" fill="none"/>
+            <path d="M11.5 6.5L13.5 8.5L15.25 6.25" fill="none"/>
         </symbol>
     </svg>
     
