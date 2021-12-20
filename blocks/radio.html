@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./radio.css">
+</head>
+<body>
+    <svg class="svg"  xmlns="http://www.w3.org/2000/svg">
+        <circle id="circle" cx="8" cy="8" r="4" stroke="none"/>
+        </svg>
+
+    <div class="radio">
+        <label class="radio__form" for="empty">
+            <input class="radio__area" type="radio" name="radio" id="empty">
+            <svg class="radio__icon">
+                <use href=#circle></use>
+            </svg>
+        </label>
+        <label class="radio__form" for="cheked">
+            <input class="radio__area" type="radio" id="cheked" name="radio" checked>
+            <svg class="radio__icon">
+                <use href=#circle></use>
+            </svg>
+        </label>
+    </div> 
+</body>
+</html>
